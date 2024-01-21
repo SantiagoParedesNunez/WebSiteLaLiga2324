@@ -1,0 +1,98 @@
+/* Seteo de pagina */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Definimos ancho y alto de la pagina */
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Definimos clase para uso de fondo de pantalla */
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Definimos posicion de los menús */
+header{
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+}
+
+/* Definimos tamaño de imagenes en menús */
+header img{
+    transition: all .5s;
+    width: 50px;
+    height: 50px;
+}
+
+/* Definimos cambios de imagenes de menús al colocar el mouse sobre ellos */
+header img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Definimos posicion de imagenes  */
+main{
+    color: white;
+    position: absolute;
+    bottom: 5rem;
+    padding: 2rem;
+    background-color: rgba(10, 10, 10, .7);
+}
+
+/* INICIO de bloque con clase para formato de elementos de la página de equipos */
+.teamTitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.teamTitle img{
+    width: 150px;
+    height: 150px;
+    margin-right: 2rem;
+}
+
+.teamTitle h1{
+    font-family: 'Mulish', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+/* FIN de bloque con clase para formato de elementos de la página de equipos */
+
+/* Definimos formato de parrafos en main de la página */
+main p{
+    margin-bottom: 1rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-align: justify;
+}
+
+/* Inicio de bloque para configiración de comportamiento responsive de la página */
+@media (max-width: 532px) {
+    .teamTitle img{
+        width: 100px;
+        height: 100px;
+        margin-right: 2rem;
+    }
+    
+    .teamTitle h1{
+        font-size: 3rem;
+    }
+
+    main p{
+        font-size: .8rem;
+    }
+}

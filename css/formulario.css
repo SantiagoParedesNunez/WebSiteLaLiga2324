@@ -1,0 +1,58 @@
+section {
+    width: 80vw;
+    height: 75vh;
+    background: #111;
+    position: relative;
+    top: 20vh;
+    left: 10vw;
+    border-radius: 18px;
+    box-shadow: 0 0 2px 10px rgba(0, 0, 0, .07);
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+section form input {
+    width: 80%;
+    height: 32px;
+    margin: 20px 0;
+    border: none;
+    padding: 2px 18px;
+    border-radius: 24px;
+}
+
+section form textarea {
+    width: 80%;
+    height: 86px;
+    border: none;
+    margin: 20px 0;
+    border-radius: 24px;
+    padding: 2px 18px;
+    resize: none;
+}
+
+section form input::placeholder {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+section form textarea::placeholder {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.enviar {
+    width: 10%;
+    cursor: pointer;
+    color: #fff;
+    background: #77a345;
+}
+
+.enviar:hover {
+    background: #5a7e31;
+}
